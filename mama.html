@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.mamaearth.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8YMk5z0g5FanD3jUy9BAtXnyLY/static/css/main.css" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+ marquee:hover{
+    color: yellow;
+ }
+#navt{
+    margin-left: 200px;
+}
+.fa-user{
+    display: inline-block; 
+    color: white;
+    margin-left:260px;
+}
+
+/*#nav2{
+    border:1px solid lightgray;
+    height:60px;
+    width:100%;
+}*/
+#logo{
+    height:50px;
+    width:150px;
+    margin-left: 100px;
+    margin-top: 5px;
+}
+#btn{
+    width:100px;
+    height:37px;
+    background-color: #00afef;
+    color:white;
+    border: none;
+    border-radius: 5px;
+}
+#srch{
+    width:500px;
+    height:40px;
+    margin-left:155px;
+    border:1px solid lightgray;
+    border-radius: 3px;
+}
+.fa-shopping-cart{
+    margin-left: 200px;
+    color: #00afef;
+    font-size: 24px;
+}
+.fa-user-alt{
+    color: #00afef;
+    margin-left: 100px;
+    font-size: 24px;
+}
+
+
+/*#nav3{
+    background-color: white;
+    width: 100%;
+    height: 35px;
+    color: black;
+    border:1px solid lightgray;
+}*/
+#homet{
+    margin-left: 100px;
+    margin-top: 12px;
+    font-family: 'Lato',sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #00afef;
+    display: inline-block;
+}
+.hometxt{
+    margin-top: 12px;
+    font-family: 'Lato',sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: grey;
+    display: inline-block;
+}
+#beauty{
+    margin-left: 70px;
+}
+#hair{
+    margin-left: 160px;
+}
+#face{
+    margin-left:230px ;
+}
+#body{
+    margin-left: 310px;
+}
+#gift{
+    margin-left: 430px;
+}
+ul{
+    display: inline-block;
+   vertical-align: top; 
+}
+li{
+    list-style: none;
+    color: grey;
+    font-size: 12px;
+    margin-top: 15px
+}
+#shampoo{
+    color: grey;
+    text-decoration: none;
+    font-weight: lighter;
+}
+.bold{
+    color: black;
+    font-size: 17px;
+}
+.blue{
+    color: #00afef;
+    font-size: 17px;
+}
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    color: grey;
+    Z-index:10;
+    font-family: 'Lato',sans-serif;
+    font-size: 13px;
+    margin-top: 10px;
+    /* font-weight: bold; */
+   
+ }
+ p{
+     font-weight: bold;
+     margin-left: 40px;
+ }
+ 
+ .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    border-top: solid #00afef;
+    
+ }
+
+.dropdown:hover  .dropdown-content {
+    display: block;
+    background-color:white;
+    /* #F7D6D0 */
+ }
+
+.main{
+   display: flex;
+   
+}
+.grid-dr{
+width: 100%;
+}
+
+.grid-item-dr{
+   height:450px;
+}
+.forimg{
+   border:1px solid greenyellow;
+   width: 100%;
+   height:250px;
+}
+.forimg1{
+   width: 100%;
+   height:250px;
+}
+.redbox{
+   border:1px solid red;
+   height:20px;
+   width:90px;
+   border-radius: 5px;
+   background-color:#ef5350;
+}
+.redboxt{
+   color:white;
+   font-size:11px;
+   font-weight: bold;
+}
+  .cards{
+            margin-top: 100px;
+            padding: 0 25px;
+            display: flex;
+            border: 0px;
+        }
+        .card{
+            height: 300px;
+            width: 200px;
+            background-color: rgba(211, 227, 222, 0.011);
+            border:0px;
+            margin-left: 185px;
+            
+        }
+        .card-top{
+            height: 150px;
+            width: 100px;
+            margin-left: 50px;
+            background-color: rgba(211, 227, 222, 0.011);
+        }
+        .para{
+            text-transform: capitalize;
+            font-family:'Alegreya Sans';
+            font-size: 20px;
+        }
+        .gap{
+            margin-left:60px;
+        }
+
+        .container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    grid-gap: 1rem;
+                }
+
+                
+            h3:hover{
+                text-shadow: 2px 2px 5px black;
+                color: wheat;
+            }
+            h3{
+                margin-left: -90px;
+            }
+            h2{
+                text-align: center;
+                margin-top: 50px;
+                font-size: 50px;
+                background-color: whitesmoke;
+            }
+            .pa{
+                text-align: center;
+                font-size: 20px ;
+                margin-top: 40px;
+                background-color: whitesmoke;
+
+            }
+            .card:hover {
+                  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+                  transform: translateY(-2px);
+                  transition: box-shadow 0.3s, transform 0.3s;
+}
+                a{
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        color:blue;
+                    }
+                    .page-footer {
+                              background-color: #33b5e5;
+                              color: #fff;
+                            }
+
+                            .page-footer a {
+                              color: #fff;
+                              text-decoration: none;
+                            }
+
+                            .page-footer a:hover {
+                              text-decoration: underline;
+                            }
+
+                            .page-footer.footer-copyright {
+                              background-color: #1e88e5;
+                              padding: 10px 0;
+                            }
+
+                            .page-footer h5 {
+                              margin-bottom: 20px;
+                            }
+                            .aboutss{
+                                width: 100%;
+                            }
+                            .last{
+                                width: 100%;
+                            }
+                            div img{
+                                width: 100%;
+                            }
+    </style>    
+   
+</head>
+<body>
+    <div>
+        <marquee style="width:100%; direction:up; height:25px;font-size:16px;background-color:red;color: black;">Asia's first brand with MADE SAFE certified products                                 Free Shippping above 399 | COD Available | Ertra 5% OFF
+            on prepaid orders | Shop Now</marquee>
+    </div>
+    <div id = "nav2">
+        <img id = "logo" src = "mE.png">
+        <input id = "srch" type = "text" placeholder = "Search for products.."><button id = "btn"><i class="fas fa-search"></i>Search</button>
+        <a href="#" style="color: #00afef;font-size: 11px;"> <i class="fas fa-shopping-cart fa-lg"></i>Cart</a> 
+        <i class="fas fa-user-alt fa-lg"></i><a href="#">Login</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    </a>
+                    <div class="dropdown-menu p-3" aria-labelledby="loginDropdown">
+                      <form style="width:200px ;height:200px;">
+                        <div class="form-group">
+                          <label for="username" style="font-size:15px;">Username</label>
+                          <input type="text" class="form-control" id="username" placeholder="Enter username">
+                        </div>
+                        <div class="form-group">
+                          <label for="password" style="font-size:15px;">Password</label>
+                          <input type="password" class="form-control" id="password" placeholder="Enter password">
+                        </div>
+                        <button type="submit" class="btn btn-primary"style="margin-left:57px; width:80px;height: 30px;">Login</button>
+                      </form>
+                    </div>
+                  </li>
+            </li>
+    </div><hr>
+    <div id = "nav3">
+        <p id="homet">HOME</p>
+        
+        <div class="dropdown"> <p>BABY</p> <div class="dropdown-content">
+            <ul class="inline">
+                <li class="bold">Explore</li>
+                <a href="#b1">New Launchers</a>
+                <li>Best Sellers</li>
+                <li>combos</li>
+                <li>Gift Packs</li>
+            </ul>
+            
+            <ul class="inline">
+                <li class="bold">Baby</li>
+                <li>Baby Shampoo</li>
+                <li>Baby Oralcare</li>
+                <li>Baby Oil</li>
+                <li>Baby Skin</li>
+                <li>Baby Bath</li>
+                <li>Baby Diaper</li>
+            </ul>
+
+            <ul class="inline">
+                <li class="blue">See All</li>
+            </ul>
+        </div> </div>
+
+
+        <div  id="beauty" class="dropdown"> <p>BEAUTY</p> <div class="dropdown-content">
+            <ul class="inline">
+                <li class="bold">Explore</li>
+                <a href="#b2">New Launchers</a>
+                <li>Best Sellers</li>
+                <li>combos</li>
+                <li>Gift Packs</li>
+            </ul>
+    
+            <ul class="inline">
+                <li class="bold">Beauty</li>
+                <li>Face</li>
+                <li>Hair</li>
+                <li>Body</li>
+            </ul>
+
+            <ul class="inline">
+                <li class="blue">See All</li>
+            </ul>
+        </div> </div>
+
+
+        <div  id="hair" class="dropdown"> <p>HAIR</p> <div class="dropdown-content">
+            <ul class="inline">
+                <li class="bold">Explore</li>
+                <a href="#b3">New Launchers</a>
+                <li>Best Sellers</li>
+                <li>combos</li>
+                <li>Gift Packs</li>
+            </ul>
+    
+            <ul class="inline">
+                <li class="bold">Hair</li>
+                <a id="shampoo" href="Products.html"><li>Shampoo</li></a>
+                <li>conditioner</li>
+                <li>Hair Oil</li>
+                <li>Hair Mask</li>
+                <li>Hair Serum</li>
+            </ul>
+
+            <ul class="inline">
+                <li class="blue">See All</li>
+            </ul>
+        </div> </div>
+
+
+        <div  id="face" class="dropdown"> <p>FACE</p> <div class="dropdown-content">
+            <ul class="inline">
+                <li class="bold">Explore</li>
+                <a href="#b4">New Launchers</a>
+                <li>Best Sellers</li>
+                <li>combos</li>
+                <li>Gift Packs</li>
+            </ul>
+    
+            <ul class="inline">
+                <li class="bold">Face</li>
+                <li>Face Wash</li>
+                <li>Face Mask</li>
+                <li>Face Cream</li>
+                <li>Face Serum</li>
+                <li>Face Scrum</li>
+                <li>Face Toner</li>
+                <li>Face Gel</li>
+                <li>Face Sheet Mask</li>
+            </ul>
+
+            <ul class="inline">
+                <li class="blue">See All</li>
+            </ul>
+        </div> </div>
+
+
+        <div  id="body" class="dropdown"> <p>BODY</p> <div class="dropdown-content">
+            <ul class="inline">
+                <li class="bold">Explore</li>
+                <a href="#b5">New Launchers</li>
+                <li>Best Sellers</li>
+                <li>combos</li>
+                <li>Gift Packs</li>
+            </ul>
+    
+            <ul class="inline">
+                <li class="bold">Bodyy</li>
+                <li>Body Butter</li>
+                <li>Body Wash</li>
+                <li>Body Lotion</li>
+                <li>Body Scrub</li>
+                <li>Hand Cream</li>
+            </ul>
+
+            <ul class="inline">
+                <li class="blue">See All</li>
+            </ul>
+        </div> </div>
+
+        <p id="gift" class="hometxt">GIFT PACKS</p>
+        <p class="hometxt">ALL PRODUCTS</p>
+        <p class="hometxt">BLOG</p>
+        <p class="hometxt">PLANT GOODNESS</p>
+        <p class="hometxt">STORE LOCATOR</p>
+    </div>
+
+
+    
+    
+    <div class="carousel">
+       
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="1.png" alt="Los Angeles" style="width:100%;">
+            </div>
+      
+            <div class="item">
+              <img src="2.png" alt="Chicago" style="width:100%;">
+            </div>
+          
+            <div class="item">
+              <img src="3.png" alt="New york" style="width:100%;">
+            </div>
+
+            <div class="item">
+                <img src="4.png" alt="New york" style="width:100%;">
+              </div>
+          </div>
+      
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+  <div class="pa" id="b5">
+    <h2>Skin Care</h2>
+<p>Explore 100% toxin-free and safe skincare products by Mamaearth that are formulated with love and the goodness of natural ingredients</p>
+  </div>
+  <div class="main">
+    <div class="cards">
+        <div class="card" class="col" >
+            <img src="body\body2.png" class="card-top" alt="..." >
+            <p class="para">Oil-Free Face Moisturizer for Acne-Prone Skin </p>
+            <span class="gap"><button type="button" class="btn btn-success btn-lg">Add To Cart</button></span>
+          </div>
+       </div>
+       <div class="cards">
+        <div class="card" class="col" >
+            <img src="body\body1.png" class="card-top" alt="..." >
+            <p class="para">Oil-Free Face Moisturizer for Acne-Prone Skin </p>
+            <span class="gap"><button type="button" class="btn btn-success btn-lg">Add To Cart</button></span>
+          </div>
+       </div>
+       <div class="cards">
+        <div class="card" class="col" >
+            <img src="body\body4.png" class="card-top" alt="..." >
+            <p class="para">Oil-Free Face Moisturizer for Acne-Prone Skin </p>
+            <span class="gap"><button type="button" class="btn btn-success btn-lg">Add To Cart</button></span>
+          </div>
+       </div>
+    </div>
+     <div class="main">
+    <div class="cards">
+        <div class="card" class="col" >
+            <img src="body\body5.png" class="card-top" alt="..." >
+            <p class="para">Oil-Free Face Moisturizer for Acne-Prone Skin </p>
+            <span class="gap"><button type="button" class="btn btn-success btn-lg">Add To Cart</button></span>
+          </div>
+       </div>
+       <div class="cards">
+        <div class="card" class="col" >
+            <img src="body\body6.png" class="card-top" alt="..." >
+            <p class="para">Oil-Free Face Moisturizer for Acne-Prone Skin </p>
+            <span class="gap"><button type="button" class="btn btn-success btn-lg">Add To Cart</button></span>
+          </div>
+       </div>
+       <div class="cards">
+        <div class="card" class="col" >
+            <img src="body\body3.png" class="card-top" alt="..." >
+            <p class="para">Oil-Free Face Moisturizer for Acne-Prone Skin </p>
+            <span class="gap"><button type="button" class="btn btn-success btn-lg">Add To Cart</button></span>
+          </div>
+       </div>
+    </div>
+ </div>
+</div>
+<div class="pa">
+    <h2>Baby Care</h2>
+<p>Your little bundle of joy deserves nothing but the best. Explore MadeSafe Certified, natural, 100% toxin-free & gentle baby care products by Mamaearth. Give your little one the care they deserve!</p>
+  </div>
+  <div class="main" id="b1">
+    <div class="cards">
+        <div class="card" class="col" >
+            <img src="baby\1.png" class="card-top" alt="..." >
+            <p class="para">Oil-Free Face Moisturizer for Acne-Prone Skin </p>
+            <span class="gap"><button type="button" class="btn btn-success btn-lg">Add To Cart</button></span>
+          </div>
+       </div>
+       <div class="cards">
+        <div class="card" class="col" >
+            <img src="baby\2.png" class="card-top" alt="..." >
+            <p class="para">Oil-Free Face Moisturizer for Acne-Prone Skin </p>
+            <span class="gap"><button type="button" class="btn btn-success btn-lg">Add To Cart</button></span>
+          </div>
+       </div>
+       <div class="cards">
+        <div class="card" class="col" >
+            <img src="baby\4.png" class="card-top" alt="..." >
+            <p class="para">Oil-Free Face Moisturizer for Acne-Prone Skin </p>
+            <span class="gap"><button type="button" class="btn btn-success btn-lg">Add To Cart</button></span>
+          </div>
+       </div>
+    </div>
+     <div class="main">
+    <div class="cards">
+        <div class="card" class="col" >
+            <img src="baby\5.png" class="card-top" alt="..." >
+            <p class="para">Oil-Free Face Moisturizer for Acne-Prone Skin </p>
+            <span class="gap"><button type="button" class="btn btn-success btn-lg">Add To Cart</button></span>
+          </div>
+       </div>
+       <div class="cards">
+        <div class="card" class="col" >
+            <img src="baby\6.png" class="card-top" alt="..." >
+            <p class="para">Oil-Free Face Moisturizer for Acne-Prone Skin </p>
+            <span class="gap"><button type="button" class="btn btn-success btn-lg">Add To Cart</button></span>
+          </div>
+       </div>
+       <div class="cards">
+        <div class="card" class="col" >
+            <img src="body\body3.png" class="card-top" alt="..." >
+            <p class="para">Oil-Free Face Moisturizer for Acne-Prone Skin </p>
+            <span class="gap"><button type="button" class="btn btn-success btn-lg">Add To Cart</button></span>
+          </div>
+       </div>
+    </div>
+ </div>
+</div>
+<div class="pa" id="b4">
+    <h2>Face Care</h2>
+<p>Explore 100% toxin-free and safe Vitamin C Range for Glowing and Radiant Skin, formulated with the goodness of natural ingredients and no harmful chemicals</p>
+  </div>
+  <div class="main">
+    <div class="cards">
+        <div class="card" class="col" >
+            <img src="face\1.png" class="card-top" alt="..." >
+            <p class="para">Oil-Free Face Moisturizer for Acne-Prone Skin </p>
+            <span class="gap"><button type="button" class="btn btn-success btn-lg">Add To Cart</button></span>
+          </div>
+       </div>
+       <div class="cards">
+        <div class="card" class="col" >
+            <img src="face\2.png" class="card-top" alt="..." >
+            <p class="para">Oil-Free Face Moisturizer for Acne-Prone Skin </p>
+            <span class="gap"><button type="button" class="btn btn-success btn-lg">Add To Cart</button></span>
+          </div>
+       </div>
+       <div class="cards">
+        <div class="card" class="col" >
+            <img src="face\4.png" class="card-top" alt="..." >
+            <p class="para">Oil-Free Face Moisturizer for Acne-Prone Skin </p>
+            <span class="gap"><button type="button" class="btn btn-success btn-lg">Add To Cart</button></span>
+          </div>
+       </div>
+    </div>
+     <div class="main">
+    <div class="cards">
+        <div class="card" class="col" >
+            <img src="face\5.png" class="card-top" alt="..." >
+            <p class="para">Oil-Free Face Moisturizer for Acne-Prone Skin </p>
+            <span class="gap"><button type="button" class="btn btn-success btn-lg">Add To Cart</button></span>
+          </div>
+       </div>
+       <div class="cards">
+        <div class="card" class="col" >
+            <img src="face\6.png" class="card-top" alt="..." >
+            <p class="para">Oil-Free Face Moisturizer for Acne-Prone Skin </p>
+            <span class="gap"><button type="button" class="btn btn-success btn-lg">Add To Cart</button></span>
+          </div>
+       </div>
+       <div class="cards">
+        <div class="card" class="col" >
+            <img src="face\3.png" class="card-top" alt="..." >
+            <p class="para">Oil-Free Face Moisturizer for Acne-Prone Skin </p>
+            <span class="gap"><button type="button" class="btn btn-success btn-lg">Add To Cart</button></span>
+          </div>
+       </div>
+    </div>
+ </div>
+</div>
+<div class="pa" id="b3">
+    <h2>Hair Care</h2>
+<p>Explore 100% toxin-free and safe Hair products, formulated with the goodness of natural ingredients and no harmful chemicals.</p>
+  </div>
+  <div class="main" data-target="hair">
+    <div class="cards">
+        <div class="card" class="col" >
+            <img src="hair\1.png" class="card-top" alt="..." >
+            <p class="para">Oil-Free Face Moisturizer for Acne-Prone Skin </p>
+            <span class="gap"><button type="button" class="btn btn-success btn-lg">Add To Cart</button></span>
+          </div>
+       </div>
+       <div class="cards">
+        <div class="card" class="col" >
+            <img src="hair\2.png" class="card-top" alt="..." >
+            <p class="para">Oil-Free Face Moisturizer for Acne-Prone Skin </p>
+            <span class="gap"><button type="button" class="btn btn-success btn-lg">Add To Cart</button></span>
+          </div>
+       </div>
+       <div class="cards">
+        <div class="card" class="col" >
+            <img src="hair\4.png" class="card-top" alt="..." >
+            <p class="para">Oil-Free Face Moisturizer for Acne-Prone Skin </p>
+            <span class="gap"><button type="button" class="btn btn-success btn-lg">Add To Cart</button></span>
+          </div>
+       </div>
+    </div>
+     <div class="main">
+    <div class="cards">
+        <div class="card" class="col" >
+            <img src="hair\5.png" class="card-top" alt="..." >
+            <p class="para">Oil-Free Face Moisturizer for Acne-Prone Skin </p>
+            <span class="gap"><button type="button" class="btn btn-success btn-lg">Add To Cart</button></span>
+          </div>
+       </div>
+       <div class="cards">
+        <div class="card" class="col" >
+            <img src="hair\6.png" class="card-top" alt="..." >
+            <p class="para">Oil-Free Face Moisturizer for Acne-Prone Skin </p>
+            <span class="gap"><button type="button" class="btn btn-success btn-lg">Add To Cart</button></span>
+          </div>
+       </div>
+       <div class="cards">
+        <div class="card" class="col" >
+            <img src="hair\3.png" class="card-top" alt="..." >
+            <p class="para">Oil-Free Face Moisturizer for Acne-Prone Skin </p>
+            <span class="gap"><button type="button" class="btn btn-success btn-lg">Add To Cart</button></span>
+          </div>
+       </div>
+    </div>
+ </div>
+</div>
+
+<footer class="page-footer font-small blue pt-4">
+  <div class="container-fluid text-center text-md-left">
+    <div class="row">
+      <div class="col-md-6 mt-md-0 mt-3" class="aboutss">
+        <h1 class="text-uppercase">About Us</h1>
+        <p>Mamaearth is one of the most trustworthy brands in India. Mamaearth natural Skin, Hair, Body, Baby and Makeup products in India. Shop for 599 or more and Get Flat 20% Off +5% Prepaid Off with Code: SAVE25. It offers the best-in-class skincare products to help you discover the essence of beauty with the Goodness of Nature. We are also Asia’s first brand to be accoladed with Made Safe Certification for our beauty products. Mamaearth products are made using safe, pure, gentle, natural, and toxin-free ingredients. We work with skincare experts to make the best natural for men and women to offer you the best skincare experience.</p>
+      </div>
+      <div class="col-md-6 mb-md-0 mb-3">
+        <h5 class="text-uppercase">Links</h5>
+        <div class="d-flex justify-content-center">
+  <div class="mr-4">
+    <a href="https://www.facebook.com" target="_blank">
+      <i class="fab fa-facebook fa-3x"></i>
+      <p>Facebook</p>
+    </a>
+  </div>
+  <div class="mr-4">
+    <a href="https://www.instagram.com" target="_blank">
+      <i class="fab fa-instagram fa-3x"></i>
+      <p>Instagram</p>
+    </a>
+  </div>
+  <div>
+    <a href="https://twitter.com" target="_blank">
+      <i class="fab fa-twitter fa-3x"></i>
+      <p>Twitter</p>
+    </a>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright text-center py-3">&copy; 2023 Copyright:
+   <a href="https://www.mamaearth.com">MAMAEARTH.com</a>
+  </div>
+</footer>
+</body>
+</html>
